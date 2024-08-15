@@ -1,0 +1,5 @@
+The user will select if they want to use rock, paper or scissors.
+The computer will randomly select either rock, paper or scissors.
+The two answers will be compared to see who wins.
+The user will be told if they win, loose or draw.
+The users win streak will be adjusted based on the outcome.
