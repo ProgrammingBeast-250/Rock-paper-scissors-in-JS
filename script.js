@@ -1,0 +1,1 @@
+alert('This is a webiste template, you should proabibly change it. ;)')
