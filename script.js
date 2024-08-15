@@ -1,6 +1,7 @@
 var player = ''
 var computer = ''
 var streak = 0
+var play = 'y'
 
 function get_user_choice(){
     var u_choice = ''
@@ -31,32 +32,38 @@ function compare_choices(p, c){
         console.log('Draw')
     }
     else if (p === 'R' && c === 'S'){
-        streak = streak++
+        streak += 1
         console.log('You win! Your streak is:', streak)
         
     }
     else if (p === 'P' && c === 'R'){
-        streak = streak++
+        streak += 1
         console.log('You win! Your streak is:', streak)
     }
     else if (p === 'S' && c === 'P'){
-        streak = streak++
+        streak += 1
         console.log('You win! Your streak is:', streak)
     }
     else if (p === 'R' && c === 'P'){
         console.log('You loose! Beter luck next time.')
+        streak = 0
     }
     else if (p === 'P' && c === 'S'){
         console.log('You loose! Beter luck next time.')
+        streak = 0
     }
     else {
         console.log('You loose! Beter luck next time.')
+        streak = 0
     }
 }
 
 'Main'
-player = get_user_choice()
-computer = get_computer_choice()
-console.log('Player choice:', player)
-console.log('Computer choice:', computer)
-compare_choices(player, computer)
+while (play == 'y'){
+    player = get_user_choice()
+    computer = get_computer_choice()
+    console.log('Player choice:', player)
+    console.log('Computer choice:', computer)
+    compare_choices(player, computer)
+    play = prompt('Would you like to play again? (y/n) ')
+}
