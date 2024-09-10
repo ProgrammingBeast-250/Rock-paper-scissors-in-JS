@@ -1,15 +1,9 @@
-let player = '';
-let computer = '';
-let streak = 0;
-let play = 'y';
 
-function get_user_choice(){
-    let u_choice = '';
-    while (u_choice !== 'R' && u_choice !== 'P' && u_choice !== 'S'){
-        u_choice = prompt('Rock, Paper or Scissors: ')
-        u_choice = u_choice.toUpperCase()
-    }
-    return u_choice
+function get_user_choice(choice){
+    choice = choice.toUpperCase()
+    console.log(choice)
+    document.querySelector("#playerChoice").textContent = "You chose: " + choice
+    return choice
 }
 
 function get_computer_choice() {
@@ -24,46 +18,38 @@ function get_computer_choice() {
     else {
         choice = 'S'
     }
+    console.log(choice)
+    document.querySelector("#computerChoice").textContent = "Computer chooses: " + choice
     return choice
 }
 
 function compare_choices(p, c){
     if (p === c){
-        console.log('Draw')
+        document.querySelector("#result").textContent = "You draw!"
     }
     else if (p === 'R' && c === 'S'){
-        streak += 1
-        console.log('You win! Your streak is:', streak)
+        document.querySelector("#result").textContent = "You win!"
         
     }
     else if (p === 'P' && c === 'R'){
-        streak += 1
-        console.log('You win! Your streak is:', streak)
+        document.querySelector("#result").textContent = "You win!"
     }
     else if (p === 'S' && c === 'P'){
-        streak += 1
-        console.log('You win! Your streak is:', streak)
+        document.querySelector("#result").textContent = "You win!"
     }
     else if (p === 'R' && c === 'P'){
-        console.log('You loose! Better luck next time.')
-        streak = 0
+        document.querySelector("#result").textContent = "You loose! Better luck next time!"
     }
     else if (p === 'P' && c === 'S'){
-        console.log('You loose! Better luck next time.')
-        streak = 0
+        document.querySelector("#result").textContent = "You loose! Better luck next time!"
     }
     else {
-        console.log('You loose! Better luck next time.')
-        streak = 0
+        document.querySelector("#result").textContent = "You loose! Better luck next time!"
     }
 }
 
-// Main //
-while (play === 'y'){
-    player = get_user_choice()
-    computer = get_computer_choice()
-    console.log('Player choice:', player)
-    console.log('Computer choice:', computer)
-    compare_choices(player, computer)
-    play = prompt('Would you like to play again? (y/n) ')
+function play_game(choice){
+    let User = get_user_choice(choice)
+    let Computer = get_computer_choice()
+    compare_choices(User, Computer)
 }

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702efedd-81bc-4469-bf60-a3f75d84c316" name="Changes" comment="">
+    <list default="true" id="702efedd-81bc-4469-bf60-a3f75d84c316" name="Changes" comment="Corrected the syntax and correctly labelled the variables in the files.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,20 +28,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.script.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Rock-paper-scissors-with-GUI",
-    "last_opened_file_path": "C:/Users/dhmmi/OneDrive - St Mary's Catholic High School/A-Level/Computer Science/Programming/Web stuff/repos/Rock-paper-scissors-in-JS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Rock-paper-scissors-with-GUI&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dhmmi/OneDrive - St Mary's Catholic High School/A-Level/Computer Science/Programming/Web stuff/repos/Rock-paper-scissors-in-JS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -58,10 +61,24 @@
       <workItem from="1725531939859" duration="13000" />
       <workItem from="1725871592149" duration="414000" />
       <workItem from="1725908126403" duration="109000" />
+      <workItem from="1725955872642" duration="2427000" />
     </task>
+    <task id="LOCAL-00001" summary="Corrected the syntax and correctly labelled the variables in the files.">
+      <option name="closed" value="true" />
+      <created>1725956338470</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725956338470</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Corrected the syntax and correctly labelled the variables in the files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected the syntax and correctly labelled the variables in the files." />
   </component>
 </project>
