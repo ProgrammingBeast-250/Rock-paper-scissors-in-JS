@@ -1,3 +1,4 @@
+let score = 0;
 
 function get_user_choice(choice){
     choice = choice.toUpperCase()
@@ -24,27 +25,41 @@ function get_computer_choice() {
 }
 
 function compare_choices(p, c){
+    score = score.toString()
     if (p === c){
         document.querySelector("#result").textContent = "You draw!"
+        document.querySelector("#score").textContent = score
     }
     else if (p === 'R' && c === 'S'){
         document.querySelector("#result").textContent = "You win!"
+        score ++
+        document.querySelector("#score").textContent = score
         
     }
     else if (p === 'P' && c === 'R'){
         document.querySelector("#result").textContent = "You win!"
+        score ++
+        document.querySelector("#score").textContent = score
     }
     else if (p === 'S' && c === 'P'){
         document.querySelector("#result").textContent = "You win!"
+        score ++
+        document.querySelector("#score").textContent = score
     }
     else if (p === 'R' && c === 'P'){
         document.querySelector("#result").textContent = "You loose! Better luck next time!"
+        score = 0
+        document.querySelector("#score").textContent = score
     }
     else if (p === 'P' && c === 'S'){
         document.querySelector("#result").textContent = "You loose! Better luck next time!"
+        score = 0
+        document.querySelector("#score").textContent = score
     }
     else {
         document.querySelector("#result").textContent = "You loose! Better luck next time!"
+        score = 0
+        document.querySelector("#score").textContent = score
     }
 }
 
